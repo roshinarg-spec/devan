@@ -218,3 +218,112 @@
             text-align: center;
             padding: 30px 20px;
             margin-top: 60px;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .footer-links li {
+            margin: 0 15px;
+        }
+        .footer-links a {
+            color: #cccccc;
+        }
+        .footer-links a:hover {
+            color: #ffffff;
+        }
+
+        /* Responsive Media Query (< 768px) */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+            }
+            .nav-links li {
+                margin: 0;
+            }
+            .hero h1 {
+                font-size: 8vw;
+            }
+            .hero p {
+                font-size: 4.5vw;
+            }
+            .featured-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                padding: 10px 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav>
+            <div class="logo">Devakrishnan M J</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="https://picsum.photos/id/100/300/300" alt="Devakrishnan M J profile portrait picture" class="hero-img">
+        <h1>Devakrishnan M J</h1>
+        <p>Mechanical Engineer & Web Developer</p>
+    </section>
+
+    <main id="main-content">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="featured-grid">
+            
+            <article class="project-card">
+                <img src="https://picsum.photos/id/1/400/250" alt="Screenshot preview of website development project" class="project-img">
+                <div class="project-info">
+                    <h3>Website Development</h3>
+                    <p>Building high-performance, modern responsive website architectures tailored around clean structural layouts.</p>
+                    <a href="projects.html" class="cta-btn">View Projects</a>
+                </div>
+            </article>
+
+            <article class="project-card">
+                <img src="https://picsum.photos/id/60/400/250" alt="Form verification platform layout preview" class="project-img">
+                <div class="project-info">
+                    <h3>Form Page Development</h3>
+                    <p>Crafting deeply accessible clean application validation configurations complete with explicit accessible criteria profiles.</p>
+                    <a href="projects.html" class="cta-btn">View Projects</a>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <a href="#" class="back-to-top" aria-label="Back to top of page">↑ Top</a>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 Devakrishnan M J. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
