@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with Devakrishnan M J via email form or secure corporate social connections.">
+    <title>Contact Me | Devakrishnan M J</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #fcfcfc;
+        }
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:focus, button:focus, input:focus, select:focus, textarea:focus {
+            outline: 3px solid #ff9900;
+            outline-offset: 2px;
+        }
+
+        .skip-link {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            background: #ff9900;
+            color: #000;
+            padding: 10px;
+            z-index: 1000;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background-color: #1a1a1a;
+            z-index: 999;
+        }
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+        }
+        .logo {
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        .nav-links li {
+            margin-left: 20px;
+        }
+        .nav-links a {
+            color: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+        }
+        .nav-links a.active {
+            background-color: #0066cc;
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .page-title {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Form Visual Box Model Definitions */
+        form {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            margin-bottom: 40px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #222222;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            background-color: #fafafa;
+        }
+        
+        /* Radios and Checkboxes Layout Configuration */
+        .radio-option, .check-option {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        .radio-option input, .check-option input {
+            margin-right: 10px;
+            width: 18px;
+            height: 18px;
+        }
+
+        /* Action Buttons Grid Layout */
+        .btn-container {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 12px 24px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+        }
+        button[type="submit"] {
+            background-color: #0066cc;
+            color: #ffffff;
+            flex-grow: 2;
+        }
+        button[type="reset"] {
+            background-color: #e0e0e0;
+            color: #333333;
+            flex-grow: 1;
+        }
+
+        /* Network Connections Text Section */
+        .direct-connections {
+            background-color: #e6f2ff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .direct-connections h2 {
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        .direct-connections p {
+            margin-bottom: 10px;
+            font-size: 1.05rem;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 35px;
+            right: 35px;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 12px 18px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+        .footer-links {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+        .footer-links li {
+            margin: 0 15px;
+        }
+        .footer-links a {
+            color: #cccccc;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .nav-links {
+                width: 100%;
+                justify-content: space-around;
+            }
+            .nav-links li {
+                margin: 0;
+            }
+            .btn-container {
+                flex-direction: column;
+            }
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header>
+        <nav>
+            <div class="logo">Devakrishnan M J</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <h1 class="page-title">Connect With Me</h1>
+
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label id="lbl-name" for="txt-name">Full Name (Required)</label>
+                <input type="text" id="txt-name" name="fullname" required aria-labelledby="lbl-name">
+            </div>
+
+            <div class="form-group">
+                <label id="lbl-email" for="txt-email">Email Address (Required)</label>
+                <input type="email" id="txt-email" name="email" required aria-labelledby="lbl-email">
+            </div>
+
+            <div class="form-group">
+                <label id="lbl-subject" for="sel-subject">Primary Purpose</label>
+                <select id="sel-subject" name="purpose" aria-labelledby="lbl-subject">
+                    <option value="project">Project Collaboration</option>
+                    <option value="employment">Job Opportunity</option>
+                    <option value="general">General Inquiry</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <fieldset style="border: none; padding: 0;">
+                    <legend style="font-weight: bold; margin-bottom: 8px;">Preferred Contact Method</legend>
+                    <label class="radio-option">
+                        <input type="radio" name="pref_contact" value="email_pref" checked> Email Notification
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="pref_contact" value="linkedin_pref"> LinkedIn Messages
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="form-group">
+                <label id="lbl-msg" for="txt-msg">Message Content</label>
+                <textarea id="txt-msg" name="message" rows="5" aria-labelledby="lbl-msg"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label class="check-option">
+                    <input type="checkbox" name="newsletter_signup" value="yes"> Subscribe to project development newsletters
+                </label>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit">Submit Inquiry</button>
+                <button type="reset">Reset Fields</button>
+            </div>
+        </form>
+
+        <section class="direct-connections">
+            <h2>Direct Verification Links</h2>
+            <p><strong>Primary Corporate Email:</strong> roshinarg@gmail.com</p>
+            <p><strong>LinkedIn Profile Link:</strong> linkedin.com/in/your-profile-link</p>
+            <p><strong>GitHub Source Workspace:</strong> github.com/your-github-link</p>
+        </section>
+    </main>
+
+    <a href="#" class="back-to-top" aria-label="Back to top of page">↑ Top</a>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p>&copy; 2026 Devakrishnan M J. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
